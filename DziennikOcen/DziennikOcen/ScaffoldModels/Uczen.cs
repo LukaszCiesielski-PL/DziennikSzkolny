@@ -44,7 +44,7 @@ namespace Dziennik
         [Column("ID_klasa")]
         public long? IdKlasa { get; set; }
         [Column(TypeName = "STRING (20)")]
-        public byte[] Login { get; set; }
+        public string Login { get; set; }
         [Column(TypeName = "VARCHAR (20)")]
         public string Haslo { get; set; }
 

@@ -7,7 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="baza.db" />
     <None Remove="iconLog.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="baza.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -16,10 +23,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="iconLog.png" />
   </ItemGroup>
 
 </Project>
