@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Łukasz\\Desktop\\DziennikOcen\\DziennikOcen\\DziennikOcen.csproj": {}
+    "C:\\Users\\Łukasz\\Desktop\\DziennikSzkolny\\DziennikOcen\\DziennikOcen\\DziennikOcen.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Łukasz\\Desktop\\DziennikOcen\\DziennikOcen\\DziennikOcen.csproj": {
+    "C:\\Users\\Łukasz\\Desktop\\DziennikSzkolny\\DziennikOcen\\DziennikOcen\\DziennikOcen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Łukasz\\Desktop\\DziennikOcen\\DziennikOcen\\DziennikOcen.csproj",
+        "projectUniqueName": "C:\\Users\\Łukasz\\Desktop\\DziennikSzkolny\\DziennikOcen\\DziennikOcen\\DziennikOcen.csproj",
         "projectName": "DziennikOcen",
-        "projectPath": "C:\\Users\\Łukasz\\Desktop\\DziennikOcen\\DziennikOcen\\DziennikOcen.csproj",
+        "projectPath": "C:\\Users\\Łukasz\\Desktop\\DziennikSzkolny\\DziennikOcen\\DziennikOcen\\DziennikOcen.csproj",
         "packagesPath": "C:\\Users\\Łukasz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Łukasz\\Desktop\\DziennikOcen\\DziennikOcen\\obj\\",
+        "outputPath": "C:\\Users\\Łukasz\\Desktop\\DziennikSzkolny\\DziennikOcen\\DziennikOcen\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Łukasz\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -7,11 +7,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="iconLog.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Grafika\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="iconLog.png" />
   </ItemGroup>
 
 </Project>

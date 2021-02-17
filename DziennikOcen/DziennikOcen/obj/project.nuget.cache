@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TvXfNEnbaZrkbkx/m0ogIRc4dTLNpMDa737+0eXIhMKOlNsWwrkaO1OijsnoVqTAKyhx4ghyl//s6ONqMcE46A==",
+  "dgSpecHash": "APlM5PjYbECpSPopfnu7VEdvtw20OcoXpTUdCcLqh1madqLy3p0PAPNTYaw4iMfkvKSNpHt4MtL7SzQW4ecEcw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Łukasz\\Desktop\\DziennikOcen\\DziennikOcen\\DziennikOcen.csproj",
+  "projectFilePath": "C:\\Users\\Łukasz\\Desktop\\DziennikSzkolny\\DziennikOcen\\DziennikOcen\\DziennikOcen.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Łukasz\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Łukasz\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

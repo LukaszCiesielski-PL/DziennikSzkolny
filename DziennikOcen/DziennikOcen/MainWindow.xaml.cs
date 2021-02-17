@@ -24,5 +24,12 @@ namespace DziennikOcen
         {
             InitializeComponent();
         }
+
+        private void zalogujBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        
     }
 }
