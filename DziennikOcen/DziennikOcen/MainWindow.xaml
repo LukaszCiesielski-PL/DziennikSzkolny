@@ -11,8 +11,10 @@
             <TextBlock HorizontalAlignment="Center" Height="27" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Margin="0,60,0,0" FontSize="20" FontFamily="Franklin Gothic Medium" FontStretch="Medium" FontWeight="Normal" TextAlignment="Center"><Run Text="Menu logowania"/><LineBreak/></TextBlock>
             <TextBlock HorizontalAlignment="Center" Height="17" Margin="0,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontWeight="Bold" Opacity="0.805" TextAlignment="Center" Foreground="#FF806E6E"><Run Language="pl-pl" Text="Proszę wprowadź swój login i hasło"/></TextBlock>
             <TextBox x:Name="nazwaUzytkownika" HorizontalAlignment="Center" Height="50" Margin="0,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0,0,0,0" Background="#FFE8E8E8" TextChanged="nazwaUzytkownika_TextChanged"/>
-            <Button x:Name="zalogujBtn" Content="ZALOGUJ" HorizontalAlignment="Center" Height="30" Margin="0,295,0,0" VerticalAlignment="Top" Width="150" Background="#FFD4AC66" Foreground="White" FontWeight="Bold" BorderThickness="0,0,0,1" Click="zalogujBtn_Click"/>
+            <Button x:Name="zalogujBtn" Content="ZALOGUJ" HorizontalAlignment="Center" Height="30" Margin="0,318,0,0" VerticalAlignment="Top" Width="150" Background="#FFD4AC66" Foreground="White" FontWeight="Bold" BorderThickness="0,0,0,1" Click="zalogujBtn_Click"/>
             <PasswordBox x:Name="hasloUzytkownika" Margin="0,195,0,0" Background="#FFE8E8E8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Normal" Foreground="#FF979797" Width="200" Height="50" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <CheckBox x:Name="jakoUczen" Content="Jestem uczniem" HorizontalAlignment="Center" Height="20" Margin="0,259,0,0" VerticalAlignment="Top" Width="114"/>
+            <CheckBox x:Name="jakoNauczyciel" Content="Jestem nauczycielem" HorizontalAlignment="Center" Height="20" Margin="0,279,0,0" VerticalAlignment="Top" Width="130"/>
         </Grid>
     </Grid>
 </Window>

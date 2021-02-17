@@ -47,28 +47,23 @@ namespace DziennikOcen
 
             if(licz != 0)
             {
-               
                 foreach(var c in uczens)
                 {
                     if(c.Haslo == haslo)
                     {
-                        MessageBox.Show("zalogowano");
+                        MessageBox.Show("Zalogowano");
                     }
                     else
                     {
-                        MessageBox.Show("błędne hasło");
+                        MessageBox.Show("Błędne hasło");
                     }
                 }
             }
             else
             {
-                MessageBox.Show("błędne login");
+                MessageBox.Show("Błędny login");
             }
             
-
-
-
-
         }
 
         
