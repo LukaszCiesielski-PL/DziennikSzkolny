@@ -19,10 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Grafika\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Resource Include="iconLog.png" />
   </ItemGroup>
 
