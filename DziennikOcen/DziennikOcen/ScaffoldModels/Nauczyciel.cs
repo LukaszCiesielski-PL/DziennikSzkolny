@@ -22,12 +22,12 @@ namespace Dziennik
         public long IdNauczyciel { get; set; }
         [Required]
         [Column(TypeName = "STRING")]
-        public byte[] Imie { get; set; }
+        public string Imie { get; set; }
         [Required]
         [Column(TypeName = "STRING")]
-        public byte[] Nazwisko { get; set; }
+        public string Nazwisko { get; set; }
         [Column("Numer_tel", TypeName = "STRING (12)")]
-        public byte[] NumerTel { get; set; }
+        public string NumerTel { get; set; }
         [Column(TypeName = "STRING")]
         public byte[] Email { get; set; }
         [Required]

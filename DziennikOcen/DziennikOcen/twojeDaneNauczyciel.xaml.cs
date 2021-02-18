@@ -10,6 +10,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Dziennik;
+
 
 namespace DziennikOcen
 {
@@ -21,6 +23,15 @@ namespace DziennikOcen
         public twojeDaneNauczyciel()
         {
             InitializeComponent();
+            wyswietlDane(DaneU.nauczycielZal);
+        }
+        public void wyswietlDane(Nauczyciel _nauczyciel)
+        {
+            using var db = new baza();
+            daneZalogN.Content = _nauczyciel.NumerTel;
+
+
+
         }
     }
 }

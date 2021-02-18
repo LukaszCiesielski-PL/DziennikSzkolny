@@ -25,7 +25,15 @@ namespace DziennikOcen
         {
             InitializeComponent();
         }
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
+        }
+
+        public void zalogNau(string dane2)
+        {
+            daneZalogowanegoNauczyciela.Text = dane2;
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             _twojeDaneNauczyciel = new twojeDaneNauczyciel();

@@ -214,3 +214,11 @@ C:\Users\Łukasz\Desktop\DziennikSzkolny\DziennikOcen\DziennikOcen\obj\Debug\net
 C:\Users\Łukasz\Desktop\DziennikSzkolny\DziennikOcen\DziennikOcen\obj\Debug\netcoreapp3.1\twojeDane.baml
 C:\Users\Łukasz\Desktop\DziennikSzkolny\DziennikOcen\DziennikOcen\obj\Debug\netcoreapp3.1\twojeDaneNauczyciel.baml
 C:\Users\Łukasz\Desktop\DziennikSzkolny\DziennikOcen\DziennikOcen\obj\Debug\netcoreapp3.1\uczniowie.baml
+C:\Users\Łukasz\Downloads\DziennikSzkolny-master\DziennikOcen\DziennikOcen\obj\Debug\netcoreapp3.1\ocenyNauczyciel.g.cs
+C:\Users\Łukasz\Downloads\DziennikSzkolny-master\DziennikOcen\DziennikOcen\obj\Debug\netcoreapp3.1\planZajecNauczyciel.g.cs
+C:\Users\Łukasz\Downloads\DziennikSzkolny-master\DziennikOcen\DziennikOcen\obj\Debug\netcoreapp3.1\twojeDaneNauczyciel.g.cs
+C:\Users\Łukasz\Downloads\DziennikSzkolny-master\DziennikOcen\DziennikOcen\obj\Debug\netcoreapp3.1\uczniowie.g.cs
+C:\Users\Łukasz\Downloads\DziennikSzkolny-master\DziennikOcen\DziennikOcen\obj\Debug\netcoreapp3.1\ocenyNauczyciel.baml
+C:\Users\Łukasz\Downloads\DziennikSzkolny-master\DziennikOcen\DziennikOcen\obj\Debug\netcoreapp3.1\planZajecNauczyciel.baml
+C:\Users\Łukasz\Downloads\DziennikSzkolny-master\DziennikOcen\DziennikOcen\obj\Debug\netcoreapp3.1\twojeDaneNauczyciel.baml
+C:\Users\Łukasz\Downloads\DziennikSzkolny-master\DziennikOcen\DziennikOcen\obj\Debug\netcoreapp3.1\uczniowie.baml

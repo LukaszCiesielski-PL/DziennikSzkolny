@@ -24,10 +24,12 @@ namespace DziennikOcen
     
     
     public partial class MainWindow : Window
-    { 
+    {
+        
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private void zalogujBtn_Click(object sender, RoutedEventArgs e)
@@ -63,6 +65,7 @@ namespace DziennikOcen
                             
                             
                             IQueryable<Uczen> uczens2 = db.Uczens.Where(c => c.Login == uzytkownikU);
+                            DaneU.uczenZal=db.Uczens.Where(c => c.Login == uzytkownikU).First();
                             foreach (var c2 in uczens2)
                             {
                                 włączMenuUcznia($"Jesteś zalogowany jako\n{c2.Imie} {c2.Nazwisko}\n{c2.IdUczen}");
@@ -88,7 +91,13 @@ namespace DziennikOcen
                     {
                         if (n.Haslo == hasloN)
                         {
-                            włączMenuNauczyciela();
+                            IQueryable<Nauczyciel> nauczyciels2 = db.Nauczyciels.Where(n => n.Login == uzytkownikN);
+                            DaneU.nauczycielZal= db.Nauczyciels.Where(n => n.Login == uzytkownikN).First();
+                            foreach (var c3 in nauczyciels2)
+                            {
+                                włączMenuNauczyciela($"Jesteś zalogowany jako\n{c3.Imie} {c3.Nazwisko}\n{c3.IdNauczyciel}");
+                            }
+                            
                         }
                         else
                         {
@@ -119,10 +128,11 @@ namespace DziennikOcen
         }
 
 
-        private void włączMenuNauczyciela()
+        private void włączMenuNauczyciela(string dane2)
         {
             Window2 objWindow2 = new Window2();
             this.Close();
+            objWindow2.zalogNau(dane2);
             objWindow2.Show();
         }
 

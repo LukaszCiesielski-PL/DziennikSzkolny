@@ -9,6 +9,7 @@
       Title="twojeDaneNauczyciel">
 
     <Grid Background="#FFA6A6A6"  Width="710" Height="540">
-        
+        <Label x:Name="daneZalogN" Content="Label" HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" VerticalAlignment="Top" Width="206"/>
+
     </Grid>
 </Page>
