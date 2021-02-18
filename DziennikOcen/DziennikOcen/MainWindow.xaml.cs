@@ -60,9 +60,7 @@ namespace DziennikOcen
                     {
                         if (c.Haslo == hasloU)
                         {
-
-                            menuUcznia();
-
+                            włączMenuUcznia();
                         }
                         else
                         {
@@ -84,7 +82,7 @@ namespace DziennikOcen
                     {
                         if (n.Haslo == hasloN)
                         {
-                            MessageBox.Show("Zalogowano");
+                            włączMenuNauczyciela();
                         }
                         else
                         {
@@ -104,11 +102,17 @@ namespace DziennikOcen
             }
 
         }
-        private void menuUcznia()
+        private void włączMenuUcznia()
         {
             Window1 objWindow1 = new Window1();
             this.Close();
             objWindow1.Show();
+        }
+        private void włączMenuNauczyciela()
+        {
+            Window2 objWindow2 = new Window2();
+            this.Close();
+            objWindow2.Show();
         }
 
         private void nazwaUzytkownika_TextChanged(object sender, TextChangedEventArgs e)
