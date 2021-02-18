@@ -21,10 +21,10 @@ namespace DziennikOcen
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    
-    
+
+
     public partial class MainWindow : Window
-    { 
+    {
         public MainWindow()
         {
             InitializeComponent();
@@ -52,7 +52,7 @@ namespace DziennikOcen
             int liczU = uczens.ToArray().Length;
             int liczN = nauczyciels.ToArray().Length;
 
-            if(uczenU == true)
+            if (uczenU == true)
             {
                 if (liczU != 0)
                 {
@@ -60,7 +60,7 @@ namespace DziennikOcen
                     {
                         if (c.Haslo == hasloU)
                         {
-                            
+
                             włączMenuUcznia();
                             IQueryable<Uczen> uczens2 = db.Uczens.Where(c => c.Login == uzytkownikU);
                             foreach (var c2 in uczens2)
@@ -79,7 +79,7 @@ namespace DziennikOcen
                     MessageBox.Show("Błędny login");
                 }
             }
-           
+
             if (nauczycielN == true)
             {
                 if (liczN != 0)
@@ -101,8 +101,8 @@ namespace DziennikOcen
                     MessageBox.Show("Błędny login");
                 }
             }
-            
-            if(nauczycielN == false & uczenU == false)
+
+            if (nauczycielN == false & uczenU == false)
             {
                 MessageBox.Show("Musisz wybrać kim jesteś !");
             }
@@ -110,11 +110,11 @@ namespace DziennikOcen
         }
         private void włączMenuUcznia()
         {
-            
+
             Window1 objWindow1 = new Window1();
             this.Close();
             objWindow1.Show();
-            
+
         }
 
 
@@ -127,7 +127,7 @@ namespace DziennikOcen
 
         private void nazwaUzytkownika_TextChanged(object sender, TextChangedEventArgs e)
         {
-            
+
         }
     }
 }
