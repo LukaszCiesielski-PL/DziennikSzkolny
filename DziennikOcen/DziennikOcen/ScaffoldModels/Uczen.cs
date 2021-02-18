@@ -18,7 +18,7 @@ namespace Dziennik
 
         [Key]
         [Column("ID_uczen")]
-        public string IdUczen { get; set; }
+        public long IdUczen { get; set; }
         [Column(TypeName = "STRING")]
         public string Imie { get; set; }
         [Column("Imie_drugie", TypeName = "STRING")]

@@ -7,6 +7,18 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="nauczyciele.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ocena.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="planZajec.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="twojeDane.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Window1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -16,6 +28,18 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="nauczyciele.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ocena.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="planZajec.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="twojeDane.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Window1.xaml">
