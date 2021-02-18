@@ -35,7 +35,7 @@ namespace Dziennik
         public byte[] UczonyPrzedmiot { get; set; }
         [Required]
         [Column(TypeName = "STRING (20)")]
-        public byte[] Login { get; set; }
+        public string Login { get; set; }
         [Required]
         [Column(TypeName = "VARCHAR (20)")]
         public string Haslo { get; set; }

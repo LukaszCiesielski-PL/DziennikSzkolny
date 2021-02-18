@@ -13,8 +13,8 @@
             <TextBox x:Name="nazwaUzytkownika" HorizontalAlignment="Center" Height="50" Margin="0,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0,0,0,0" Background="#FFE8E8E8" TextChanged="nazwaUzytkownika_TextChanged"/>
             <Button x:Name="zalogujBtn" Content="ZALOGUJ" HorizontalAlignment="Center" Height="30" Margin="0,318,0,0" VerticalAlignment="Top" Width="150" Background="#FFD4AC66" Foreground="White" FontWeight="Bold" BorderThickness="0,0,0,1" Click="zalogujBtn_Click"/>
             <PasswordBox x:Name="hasloUzytkownika" Background="#FFE8E8E8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Normal" Foreground="#FF979797" Width="200" Height="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,180,0,0"/>
-            <RadioButton Content="Jestem uczniem" HorizontalAlignment="Center" Height="28" Margin="0,246,0,0" VerticalAlignment="Top" Width="120" GroupName="ktoLoguje"/>
-            <RadioButton Content="Jestem nauczycielem" HorizontalAlignment="Center" Height="27" Margin="0,273,0,0" VerticalAlignment="Top" Width="134" GroupName="ktoLoguje"/>
+            <RadioButton x:Name="jakoUczen" Content="Jestem uczniem" HorizontalAlignment="Center" Height="28" Margin="0,246,0,0" VerticalAlignment="Top" Width="120" GroupName="ktoLoguje"/>
+            <RadioButton x:Name="jakoNauczyciel" Content="Jestem nauczycielem" HorizontalAlignment="Center" Height="27" Margin="0,273,0,0" VerticalAlignment="Top" Width="134" GroupName="ktoLoguje"/>
         </Grid>
     </Grid>
 </Window>

@@ -27,8 +27,6 @@ namespace DziennikOcen
     {
         private Uczen uczen = new Uczen();
         
-
-
         public MainWindow()
         {
             InitializeComponent();
@@ -38,35 +36,74 @@ namespace DziennikOcen
         {
             using var db = new baza();
 
-            string uzytkownik = this.nazwaUzytkownika.Text;
-            string haslo = this.hasloUzytkownika.Password;
+            string uzytkownikU = this.nazwaUzytkownika.Text;
+            string hasloU = this.hasloUzytkownika.Password;
+            bool? uczenU = this.jakoUczen.IsChecked;
 
-            IQueryable<Uczen> uczens = db.Uczens.Where(c => c.Login == uzytkownik);
+            string uzytkownikN = this.nazwaUzytkownika.Text;
+            string hasloN = this.hasloUzytkownika.Password;
+            bool? nauczycielN = this.jakoNauczyciel.IsChecked;
 
-            int licz = uczens.ToArray().Length;
+            IQueryable<Uczen> uczens = db.Uczens.Where(c => c.Login == uzytkownikU);
 
-            if(licz != 0)
+            IQueryable<Nauczyciel> nauczyciels = db.Nauczyciels.Where(n => n.Login == uzytkownikN);
+
+
+            int liczU = uczens.ToArray().Length;
+            int liczN = nauczyciels.ToArray().Length;
+
+            if(uczenU == true)
             {
-                foreach(var c in uczens)
+                if (liczU != 0)
                 {
-                    if(c.Haslo == haslo)
+                    foreach (var c in uczens)
                     {
-                        MessageBox.Show("Zalogowano");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Błędne hasło");
+                        if (c.Haslo == hasloU)
+                        {
+                            MessageBox.Show("Zalogowano");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Błędne hasło");
+                        }
                     }
                 }
+                else
+                {
+                    MessageBox.Show("Błędny login");
+                }
             }
-            else
+           
+            if (nauczycielN == true)
             {
-                MessageBox.Show("Błędny login");
+                if (liczN != 0)
+                {
+                    foreach (var n in nauczyciels)
+                    {
+                        if (n.Haslo == hasloN)
+                        {
+                            MessageBox.Show("Zalogowano");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Błędne hasło");
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Błędny login");
+                }
             }
             
+            if(nauczycielN == false & uczenU == false)
+            {
+                MessageBox.Show("Musisz wybrać kim jesteś !");
+            }
+
         }
 
-        
+     
         private void nazwaUzytkownika_TextChanged(object sender, TextChangedEventArgs e)
         {
             
