@@ -61,12 +61,12 @@ namespace DziennikOcen
                         if (c.Haslo == hasloU)
                         {
                             
+                            włączMenuUcznia();
                             IQueryable<Uczen> uczens2 = db.Uczens.Where(c => c.Login == uzytkownikU);
                             foreach (var c2 in uczens2)
                             {
-                                MessageBox.Show($"{c2.Imie} {c2.Nazwisko} \n{c2.IdUczen}");
+                                MessageBox.Show($"{c2.Imie} {c2.Nazwisko} \n\t{c2.IdUczen}");
                             }
-                            włączMenuUcznia();
                         }
                         else
                         {
@@ -116,6 +116,8 @@ namespace DziennikOcen
             objWindow1.Show();
             
         }
+
+
         private void włączMenuNauczyciela()
         {
             Window2 objWindow2 = new Window2();

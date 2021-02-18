@@ -47,9 +47,11 @@ namespace DziennikOcen
 
         }
 
-        private void Button_Click_4(object sender, RoutedEventArgs e)
+        private void wylogujBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            MainWindow objMainWindow = new MainWindow();
+            this.Close();
+            objMainWindow.Show();
         }
     }
 }
