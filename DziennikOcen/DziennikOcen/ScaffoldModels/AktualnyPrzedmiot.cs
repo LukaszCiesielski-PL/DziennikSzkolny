@@ -21,7 +21,9 @@ namespace Dziennik
         [Column("ID_przedmiot")]
         public long IdPrzedmiot { get; set; }
         [Column(TypeName = "STRING")]
-        public byte[] Dzien { get; set; }
+        public string Dzien { get; set; }
+
+
 
         [ForeignKey(nameof(IdKlasa))]
         [InverseProperty(nameof(Klasa.AktualnyPrzedmiots))]

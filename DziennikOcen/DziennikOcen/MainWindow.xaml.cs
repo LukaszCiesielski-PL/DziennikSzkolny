@@ -66,6 +66,8 @@ namespace DziennikOcen
                             
                             IQueryable<Uczen> uczens2 = db.Uczens.Where(c => c.Login == uzytkownikU);
                             DaneU.uczenZal=db.Uczens.Where(c => c.Login == uzytkownikU).First();
+
+                            DaneU.ktoZalogowany = true;
                             foreach (var c2 in uczens2)
                             {
                                 włączMenuUcznia($"Jesteś zalogowany jako\n{c2.Imie} {c2.Nazwisko}\n{c2.IdUczen}");
@@ -93,6 +95,8 @@ namespace DziennikOcen
                         {
                             IQueryable<Nauczyciel> nauczyciels2 = db.Nauczyciels.Where(n => n.Login == uzytkownikN);
                             DaneU.nauczycielZal= db.Nauczyciels.Where(n => n.Login == uzytkownikN).First();
+
+                            DaneU.ktoZalogowany = false;
                             foreach (var c3 in nauczyciels2)
                             {
                                 włączMenuNauczyciela($"Jesteś zalogowany jako\n{c3.Imie} {c3.Nazwisko}\n{c3.IdNauczyciel}");

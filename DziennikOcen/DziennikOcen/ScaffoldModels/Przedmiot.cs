@@ -22,7 +22,7 @@ namespace Dziennik
         public long IdPrzedmiot { get; set; }
         [Required]
         [Column(TypeName = "STRING")]
-        public byte[] Nazwa { get; set; }
+        public string Nazwa { get; set; }
 
         [InverseProperty(nameof(AktualnyPrzedmiot.IdPrzedmiotNavigation))]
         public virtual ICollection<AktualnyPrzedmiot> AktualnyPrzedmiots { get; set; }
