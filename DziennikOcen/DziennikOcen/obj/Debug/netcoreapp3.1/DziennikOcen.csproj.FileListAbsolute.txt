@@ -122,3 +122,5 @@ C:\Users\Łukasz\Desktop\DziennikSzkolny\DziennikOcen\DziennikOcen\obj\Debug\net
 C:\Users\Łukasz\Desktop\DziennikSzkolny\DziennikOcen\DziennikOcen\bin\Debug\netcoreapp3.1\baza.db
 C:\Users\Łukasz\Desktop\DziennikSzkolny\DziennikOcen\DziennikOcen\obj\Debug\netcoreapp3.1\Window1.g.cs
 C:\Users\Łukasz\Desktop\DziennikSzkolny\DziennikOcen\DziennikOcen\obj\Debug\netcoreapp3.1\Window1.baml
+C:\Users\Łukasz\Desktop\DziennikSzkolny\DziennikOcen\DziennikOcen\obj\Debug\netcoreapp3.1\Window2.g.cs
+C:\Users\Łukasz\Desktop\DziennikSzkolny\DziennikOcen\DziennikOcen\obj\Debug\netcoreapp3.1\Window2.baml

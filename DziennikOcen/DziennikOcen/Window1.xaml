@@ -13,7 +13,7 @@
             <Button Content="Oceny" HorizontalAlignment="Left" Height="51" BorderThickness="0,0,0,0" VerticalAlignment="Top" Width="150" FontWeight="Bold" Foreground="White" Background="#FFC7B39F" FontSize="16" BorderBrush="#00707070" Margin="-2,108,0,0" Click="Button_Click_2"/>
             <Button Content="Nauczyciele" HorizontalAlignment="Left" Height="50" BorderThickness="0,0,0,0" VerticalAlignment="Top" Width="150" FontWeight="Bold" Foreground="White" Background="#FFC7B39F" FontSize="16" BorderBrush="#00707070" Margin="-2,164,0,0" Click="Button_Click_3"/>
             <Button Content="Wyloguj" HorizontalAlignment="Left" Height="50" BorderThickness="0,0,0,0" VerticalAlignment="Center" Width="150" FontWeight="Bold" Foreground="White" Background="#FFC7B39F" FontSize="16" BorderBrush="#00707070" Click="Button_Click_4" Margin="-2,0,0,0"/>
-            <TextBox HorizontalAlignment="Left" Height="48" Margin="730,0,0,0" Text="Jesteś zalogowany jako&#xD;&#xA;" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" BorderBrush="#00ABADB3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged"/>
+            <TextBlock HorizontalAlignment="Right" Height="75" Margin="0,7,0,0" Text="Jesteś zalogowany jako" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" TextAlignment="Center" FontSize="14"/>
 
         </Grid>
     </Grid>

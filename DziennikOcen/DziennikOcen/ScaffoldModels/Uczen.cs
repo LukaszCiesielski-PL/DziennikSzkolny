@@ -20,11 +20,11 @@ namespace Dziennik
         [Column("ID_uczen")]
         public long IdUczen { get; set; }
         [Column(TypeName = "STRING")]
-        public byte[] Imie { get; set; }
+        public string Imie { get; set; }
         [Column("Imie_drugie", TypeName = "STRING")]
-        public byte[] ImieDrugie { get; set; }
+        public string ImieDrugie { get; set; }
         [Column(TypeName = "STRING")]
-        public byte[] Nazwisko { get; set; }
+        public string Nazwisko { get; set; }
         [Column("Data_urodzenia", TypeName = "DATE (10)")]
         public byte[] DataUrodzenia { get; set; }
         [Column(TypeName = "VARCHAR (11)")]
