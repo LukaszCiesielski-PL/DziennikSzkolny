@@ -120,3 +120,5 @@ C:\Users\Łukasz\Desktop\DziennikSzkolny\DziennikOcen\DziennikOcen\obj\Debug\net
 C:\Users\Łukasz\Desktop\DziennikSzkolny\DziennikOcen\DziennikOcen\obj\Debug\netcoreapp3.1\DziennikOcen.genruntimeconfig.cache
 C:\Users\Łukasz\Desktop\DziennikSzkolny\DziennikOcen\DziennikOcen\obj\Debug\netcoreapp3.1\DziennikOcen_Content.g.cs
 C:\Users\Łukasz\Desktop\DziennikSzkolny\DziennikOcen\DziennikOcen\bin\Debug\netcoreapp3.1\baza.db
+C:\Users\Łukasz\Desktop\DziennikSzkolny\DziennikOcen\DziennikOcen\obj\Debug\netcoreapp3.1\Window1.g.cs
+C:\Users\Łukasz\Desktop\DziennikSzkolny\DziennikOcen\DziennikOcen\obj\Debug\netcoreapp3.1\Window1.baml

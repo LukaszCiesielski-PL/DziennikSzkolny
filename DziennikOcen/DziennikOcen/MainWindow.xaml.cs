@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Dziennik;
 using Microsoft.EntityFrameworkCore;
-
+using DziennikOcen;
 
 namespace DziennikOcen
 {
@@ -24,9 +24,7 @@ namespace DziennikOcen
     
     
     public partial class MainWindow : Window
-    {
-        private Uczen uczen = new Uczen();
-        
+    { 
         public MainWindow()
         {
             InitializeComponent();
@@ -46,6 +44,8 @@ namespace DziennikOcen
 
             IQueryable<Uczen> uczens = db.Uczens.Where(c => c.Login == uzytkownikU);
 
+
+
             IQueryable<Nauczyciel> nauczyciels = db.Nauczyciels.Where(n => n.Login == uzytkownikN);
 
 
@@ -60,7 +60,9 @@ namespace DziennikOcen
                     {
                         if (c.Haslo == hasloU)
                         {
-                            MessageBox.Show("Zalogowano");
+
+                            menuUcznia();
+
                         }
                         else
                         {
@@ -102,8 +104,13 @@ namespace DziennikOcen
             }
 
         }
+        private void menuUcznia()
+        {
+            Window1 objWindow1 = new Window1();
+            this.Close();
+            objWindow1.Show();
+        }
 
-     
         private void nazwaUzytkownika_TextChanged(object sender, TextChangedEventArgs e)
         {
             
