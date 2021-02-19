@@ -1,0 +1,21 @@
+﻿<Window x:Class="DziennikOcen.haslo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DziennikOcen"
+        mc:Ignorable="d"
+        Title="haslo" Height="450" Width="450" ResizeMode="CanMinimize">
+    <Grid Background="#FFC7B39F"  >
+        <Grid Background="White" Width="430" Height="414" Margin="10,10,10,10">
+            <TextBlock HorizontalAlignment="Center" Height="27" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Margin="0,25,0,0" FontSize="20" FontFamily="Franklin Gothic Medium" FontStretch="Medium" FontWeight="Normal" TextAlignment="Center"><Run Text="Menu "/><Run Language="pl-pl" Text="zmiany hasła"/><LineBreak/></TextBlock>
+            <TextBlock HorizontalAlignment="Center" Height="17" Margin="0,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" FontWeight="Bold" Opacity="0.805" TextAlignment="Center" Foreground="#FF806E6E"><Run Text="Proszę wprowadź swój login "/><Run Language="pl-pl" Text=", stare "/><Run Text="hasło"/><Run Language="pl-pl" Text=" i nowe hasło"/></TextBlock>
+            <TextBox x:Name="nazwaUzytkownika" HorizontalAlignment="Center" Height="50" Margin="0,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0,0,0,0" Background="#FFE8E8E8" TextChanged="nazwaUzytkownika_TextChanged"/>
+            <PasswordBox x:Name="hasloUzytkownika" Background="#FFE8E8E8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Normal" Foreground="#FF979797" Width="200" Height="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,157,0,0"/>
+            <PasswordBox x:Name="noweHasloUzytkownika" Background="#FFE8E8E8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Normal" Foreground="#FF979797" Width="200" Height="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,223,0,0"/>
+            <Button x:Name="zmienHaslo" Content="Zatwierdź" HorizontalAlignment="Center" Height="30" Margin="0,294,0,0" VerticalAlignment="Top" Width="150" Foreground="White" FontWeight="Bold" BorderBrush="{x:Null}" Background="#FF705151" Click="zmien_Click"/>
+            <Button x:Name="cofnijBtn" Content="Cofnij" HorizontalAlignment="Center" Height="30" Margin="0,329,0,0" VerticalAlignment="Top" Width="150" Background="#FFD4AC66" Foreground="White" FontWeight="Bold" BorderThickness="0,0,0,1" Click="cofnijBtn_Click" FontSize="14"/>
+        </Grid>
+    </Grid>
+
+</Window>

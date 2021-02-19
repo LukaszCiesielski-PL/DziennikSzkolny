@@ -16,6 +16,7 @@ using Dziennik;
 using Microsoft.EntityFrameworkCore;
 using DziennikOcen;
 
+
 namespace DziennikOcen
 {
     /// <summary>
@@ -143,6 +144,15 @@ namespace DziennikOcen
         private void nazwaUzytkownika_TextChanged(object sender, TextChangedEventArgs e)
         {
             
+        }
+
+       
+
+        private void zmienHaslo_Click(object sender, RoutedEventArgs e)
+        {
+            haslo objHaslo = new haslo();
+            this.Close();
+            objHaslo.Show();
         }
     }
 }
