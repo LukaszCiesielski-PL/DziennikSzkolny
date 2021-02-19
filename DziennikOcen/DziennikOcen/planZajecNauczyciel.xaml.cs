@@ -38,28 +38,28 @@ namespace DziennikOcen
         {
             foreach (var x in _aktualnyPrzedmiots.Where(o => o.Dzien == "Poniedziałek"))
             {
-                Label _label = new Label { Height = 60, Content = $"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n {IdNaKlasa((int)(x.IdKlasa))}" };
+                Label _label = new Label { Height = 60, Content = $"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n{IdNaKlasa((int)(x.IdKlasa))}" };
                 Pon.Children.Add(_label);
             }
             foreach (var x in _aktualnyPrzedmiots.Where(o => o.Dzien == "Wtorek"))
             {
-                Label _label = new Label { Height = 60, Content = $"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n {IdNaKlasa((int)(x.IdKlasa))}" };
+                Label _label = new Label { Height = 60, Content = $"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n{IdNaKlasa((int)(x.IdKlasa))}" };
                 Wt.Children.Add(_label);
             }
             foreach (var x in _aktualnyPrzedmiots.Where(o => o.Dzien == "Środa"))
             {
-                Label _label = new Label { Height = 60, Content = $"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n {IdNaKlasa((int)(x.IdKlasa))}" };
+                Label _label = new Label {Height = 60, Content = $"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n{IdNaKlasa((int)(x.IdKlasa))}" };
                 Sr.Children.Add(_label);
 
             }
             foreach (var x in _aktualnyPrzedmiots.Where(o => o.Dzien == "Czwartek"))
             {
-                Label _label = new Label { Height = 60, Content = $"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n {IdNaKlasa((int)(x.IdKlasa))}" };
+                Label _label = new Label { Height = 60, Content = $"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n{IdNaKlasa((int)(x.IdKlasa))}" };
                 Czw.Children.Add(_label);
             }
             foreach (var x in _aktualnyPrzedmiots.Where(o => o.Dzien == "Piątek"))
             {
-                Label _label = new Label { Height = 60, Content = $"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n {IdNaKlasa((int)(x.IdKlasa))}" };
+                Label _label = new Label { Height = 60, Content = $"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n{IdNaKlasa((int)(x.IdKlasa))}" };
                 Pt.Children.Add(_label);
             }
         }

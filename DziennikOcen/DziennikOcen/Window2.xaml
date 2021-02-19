@@ -6,16 +6,16 @@
         xmlns:local="clr-namespace:DziennikOcen" 
         xmlns:Dziennik="clr-namespace:Dziennik" x:Class="DziennikOcen.Window2"
         mc:Ignorable="d"
-        Title="Konto nauczyciela" Height="600" Width="900">
+        Title="Konto nauczyciela" Height="620" Width="900">
     <Grid Background="#FFC7B39F" >
         <Grid Background="White" Margin="10,10,10,10">
-            <Frame Name="NavigateNauczyciel" Grid.Column="0" NavigationUIVisibility="Hidden" Width="710" Height="540" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10,10,10,10"></Frame>
+            <Frame Name="NavigateNauczyciel" NavigationUIVisibility="Hidden" Width="530" Height="540" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="234,0,0,0"/>
             <Button Content="Twoje dane" HorizontalAlignment="Left" Height="50" BorderThickness="0,0,0,0" VerticalAlignment="Top" Width="135" FontWeight="Bold" Foreground="White" Background="#FFC7B39F" FontSize="16" BorderBrush="#00707070" Margin="-2,-2,0,0" Click="Button_Click"/>
             <Button Content="Plan zajęć" HorizontalAlignment="Left" Height="50" BorderThickness="0,0,0,0" VerticalAlignment="Top" Width="135" FontWeight="Bold" Foreground="White" Background="#FFC7B39F" FontSize="16" BorderBrush="#00707070" Margin="-2,53,0,0" Click="Button_Click_1"/>
             <Button Content="Oceny" HorizontalAlignment="Left" Height="51" BorderThickness="0,0,0,0" VerticalAlignment="Top" Width="135" FontWeight="Bold" Foreground="White" Background="#FFC7B39F" FontSize="16" BorderBrush="#00707070" Margin="-2,108,0,0" Click="Button_Click_2"/>
             <Button Content="Uczniowie" HorizontalAlignment="Left" Height="50" BorderThickness="0,0,0,0" VerticalAlignment="Top" Width="135" FontWeight="Bold" Foreground="White" Background="#FFC7B39F" FontSize="16" BorderBrush="#00707070" Margin="-2,164,0,0" Click="Button_Click_3"/>
             <Button x:Name="wylogujBtn" Content="Wyloguj" HorizontalAlignment="Left" Height="50" BorderThickness="0,0,0,0" VerticalAlignment="Center" Width="135" FontWeight="Bold" Foreground="White" Background="#FFC7B39F" FontSize="16" BorderBrush="#00707070" Click="wylogujBtn_Click" Margin="-2,0,0,0"/>
-            <TextBlock x:Name="daneZalogowanegoNauczyciela" HorizontalAlignment="Right" Width="170" Height="75" Margin="0,20,10,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" FontSize="14">
+            <TextBlock x:Name="daneZalogowanegoNauczyciela" HorizontalAlignment="Right" Width="170" Height="75" Margin="0,499,700,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" FontSize="14">
 
             </TextBlock>
 

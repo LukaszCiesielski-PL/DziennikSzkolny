@@ -26,19 +26,19 @@ namespace Dziennik
         [Column(TypeName = "STRING")]
         public string Nazwisko { get; set; }
         [Column("Data_urodzenia", TypeName = "DATE (10)")]
-        public byte[] DataUrodzenia { get; set; }
+        public string DataUrodzenia { get; set; }
         [Column(TypeName = "VARCHAR (11)")]
         public string Pesel { get; set; }
         [Column("Miasto_zam", TypeName = "STRING")]
-        public byte[] MiastoZam { get; set; }
+        public string MiastoZam { get; set; }
         [Column("Ulica_zam", TypeName = "STRING")]
-        public byte[] UlicaZam { get; set; }
+        public string UlicaZam { get; set; }
         [Column("Numer_ul", TypeName = "VARCHAR (8)")]
         public string NumerUl { get; set; }
         [Column("Numer_tel", TypeName = "STRING (12)")]
-        public byte[] NumerTel { get; set; }
+        public string NumerTel { get; set; }
         [Column(TypeName = "STRING")]
-        public byte[] Email { get; set; }
+        public string Email { get; set; }
         [Column("ID_opiekun")]
         public long IdOpiekun { get; set; }
         [Column("ID_klasa")]

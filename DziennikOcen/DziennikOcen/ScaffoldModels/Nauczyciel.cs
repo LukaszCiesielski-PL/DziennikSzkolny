@@ -29,10 +29,10 @@ namespace Dziennik
         [Column("Numer_tel", TypeName = "STRING (12)")]
         public string NumerTel { get; set; }
         [Column(TypeName = "STRING")]
-        public byte[] Email { get; set; }
+        public string Email { get; set; }
         [Required]
         [Column("Uczony_przedmiot", TypeName = "STRING")]
-        public byte[] UczonyPrzedmiot { get; set; }
+        public string UczonyPrzedmiot { get; set; }
         [Required]
         [Column(TypeName = "STRING (20)")]
         public string Login { get; set; }

@@ -20,13 +20,13 @@ namespace Dziennik
         [Column("ID_opiekun")]
         public long IdOpiekun { get; set; }
         [Column(TypeName = "STRING")]
-        public byte[] Imie { get; set; }
+        public string Imie { get; set; }
         [Column(TypeName = "STRING")]
-        public byte[] Nazwisko { get; set; }
+        public string Nazwisko { get; set; }
         [Column("Numer_tel", TypeName = "STRING (12)")]
-        public byte[] NumerTel { get; set; }
+        public string NumerTel { get; set; }
         [Column(TypeName = "STRING")]
-        public byte[] Email { get; set; }
+        public string Email { get; set; }
         [Column("Miasto_zam", TypeName = "STRING")]
         public byte[] MiastoZam { get; set; }
         [Column("Ulica_zam", TypeName = "STRING")]

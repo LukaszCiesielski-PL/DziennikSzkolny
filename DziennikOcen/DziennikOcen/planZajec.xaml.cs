@@ -38,27 +38,27 @@ namespace DziennikOcen
             
             foreach(var x in _aktualnyPrzedmiots.Where(o => o.Dzien == "Poniedziałek"))
             {
-                Label _label = new Label { Height=60, Content=$"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n {IdNaNauczyciel((int)(x.IdNauczyciel))}"};
+                Label _label = new Label { Height=60, Content=$"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n{IdNaNauczyciel((int)(x.IdNauczyciel))}"};
                 Pon.Children.Add(_label);
             }
             foreach (var x in _aktualnyPrzedmiots.Where(o => o.Dzien == "Wtorek"))
             {
-                Label _label = new Label { Height = 60, Content = $"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n {IdNaNauczyciel((int)(x.IdNauczyciel))}" };
+                Label _label = new Label { Height = 60, Content = $"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n{IdNaNauczyciel((int)(x.IdNauczyciel))}" };
                 Wt.Children.Add(_label);
             }
             foreach (var x in _aktualnyPrzedmiots.Where(o => o.Dzien == "Środa"))
             {
-                Label _label = new Label { Height = 60, Content = $"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n {IdNaNauczyciel((int)(x.IdNauczyciel))}" };
+                Label _label = new Label { Height = 60, Content = $"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n{IdNaNauczyciel((int)(x.IdNauczyciel))}" };
                 Sr.Children.Add(_label);
             }
             foreach (var x in _aktualnyPrzedmiots.Where(o => o.Dzien == "Czwartek"))
             {
-                Label _label = new Label { Height = 60, Content = $"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n {IdNaNauczyciel((int)(x.IdNauczyciel))}" };
+                Label _label = new Label { Height = 60, Content = $"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n{IdNaNauczyciel((int)(x.IdNauczyciel))}" };
                 Czw.Children.Add(_label);
             }
             foreach (var x in _aktualnyPrzedmiots.Where(o => o.Dzien == "Piątek"))
             {
-                Label _label = new Label { Height = 60, Content = $"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n {IdNaNauczyciel((int)(x.IdNauczyciel))}" };
+                Label _label = new Label { Height = 60, Content = $"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n{IdNaNauczyciel((int)(x.IdNauczyciel))}" };
                 Pt.Children.Add(_label);
             }
         }
@@ -76,10 +76,10 @@ namespace DziennikOcen
         
 
        
-        public string IdNaNauczyciel(int _naPrzedmiot)
+        public string IdNaNauczyciel(int _naNauczyciel)
         {
             using var db = new baza();
-            var naucz = db.Nauczyciels.Where(o => o.IdNauczyciel == _naPrzedmiot).First();
+            var naucz = db.Nauczyciels.Where(o => o.IdNauczyciel == _naNauczyciel).First();
             return $"{naucz.Imie} {naucz.Nazwisko}";
         }
         public string IdNaPrzedmiot(int _naPrzedmiot)

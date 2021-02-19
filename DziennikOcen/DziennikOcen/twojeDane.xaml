@@ -6,9 +6,34 @@
       xmlns:local="clr-namespace:DziennikOcen"
       mc:Ignorable="d" 
       
-      Title="twojeDane">
+      Title="twojeDane" d:DesignWidth="540.543" Height="610">
 
-    <Grid Background="#FFA6A6A6" Width="710" Height="540">
-        <Label x:Name="daneZalogU" Content="Label" HorizontalAlignment="Left" Height="32" Margin="10,10,0,0" VerticalAlignment="Top" Width="74"/>
+    <Grid Background="#FFA6A6A6" Margin="0,0,0,0" Width="540" Height="630">
+        <Label x:Name="daneZalogU" Padding="10,10,5,10" Content="Label" HorizontalAlignment="Left" Height="45" Margin="190,13,0,0" VerticalAlignment="Top" Width="165" RenderTransformOrigin="0.505,0.55" BorderBrush="White" Background="White" FontSize="18"/>
+        <Label x:Name="daneZalogU_Copy1" Padding="10,10,5,10" Content="Label" HorizontalAlignment="Left" Height="45" Margin="190,66,0,0" VerticalAlignment="Top" Width="330" RenderTransformOrigin="0.505,0.55" Background="White" FontSize="18"/>
+        <Label x:Name="daneZalogU_Copy2" Padding="10,10,5,10" Content="Label" HorizontalAlignment="Left" Height="44" Margin="445,272,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.505,0.55" Background="White" FontSize="18"/>
+        <Label x:Name="daneZalogU_Copy3" Padding="10,10,5,10" Content="Label" HorizontalAlignment="Left" Height="45" Margin="190,322,0,0" VerticalAlignment="Top" Width="330" RenderTransformOrigin="0.505,0.55" Background="White" FontSize="18"/>
+        <Label x:Name="daneZalogU_Copy4" Padding="10,10,5,10" Content="Label" HorizontalAlignment="Left" Height="45" Margin="190,373,0,0" VerticalAlignment="Top" Width="330" RenderTransformOrigin="0.505,0.55" Background="White" FontSize="18"/>
+        <TextBlock Padding="10,10,5,10" HorizontalAlignment="Left" Height="45" Margin="10,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Background="White" FontSize="18" LineHeight="18"><Run Language="pl-pl" Text="Imię"/></TextBlock>
+        <TextBlock Padding="10,10,5,10" HorizontalAlignment="Left" Height="45" Margin="10,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Background="White" FontSize="18" LineHeight="18"><Run Language="pl-pl" Text="Nazwisko"/></TextBlock>
+        <TextBlock Padding="10,10,5,10" HorizontalAlignment="Left" Height="45" Margin="10,322,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Background="White" FontSize="18" LineHeight="18"><Run Language="pl-pl" Text="Numer telefonu"/></TextBlock>
+        <TextBlock Padding="10,10,5,10" HorizontalAlignment="Left" Height="45" Margin="10,373,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Background="White" FontSize="18" LineHeight="18"><Run Language="pl-pl" Text="Email"/></TextBlock>
+        <TextBlock Padding="10,10,5,10" HorizontalAlignment="Left" Height="45" Margin="10,425,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Background="White" FontSize="18" LineHeight="18"><Run Language="pl-pl" Text="Klasa"/></TextBlock>
+        <Label x:Name="daneZalogU_Copy" Padding="10,10,5,10" Content="Label" HorizontalAlignment="Left" Height="45" Margin="360,13,0,0" VerticalAlignment="Top" Width="160" RenderTransformOrigin="0.505,0.55" BorderBrush="White" Background="White" FontSize="18"/>
+        <Label x:Name="daneZalogU_Copy5" Padding="10,10,5,10" Content="Label" HorizontalAlignment="Left" Height="45" Margin="190,118,0,0" VerticalAlignment="Top" Width="330" RenderTransformOrigin="0.505,0.55" BorderBrush="White" Background="White" FontSize="18"/>
+        <Label x:Name="daneZalogU_Copy6" Padding="10,10,5,10" Content="Label" HorizontalAlignment="Left" Height="44" Margin="190,272,0,0" VerticalAlignment="Top" Width="250" RenderTransformOrigin="0.505,0.55" Background="White" FontSize="18"/>
+        <TextBlock Padding="10,10,5,10" HorizontalAlignment="Left" Height="45" Margin="10,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Background="White" FontSize="18" LineHeight="18"><Run Language="pl-pl" Text="Data urodzenia"/></TextBlock>
+        <TextBlock Padding="10,10,5,10" HorizontalAlignment="Left" Height="44" Margin="10,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Background="White" FontSize="18" LineHeight="18"><Run Language="pl-pl" Text="Ulica"/></TextBlock>
+        <Label x:Name="daneZalogU_Copy7" Padding="10,10,5,10" Content="Label" HorizontalAlignment="Left" Height="44" Margin="190,169,0,0" VerticalAlignment="Top" Width="330" RenderTransformOrigin="0.505,0.55" BorderBrush="White" Background="White" FontSize="18"/>
+        <TextBlock Padding="10,10,5,10" HorizontalAlignment="Left" Height="44" Margin="10,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Background="White" FontSize="18" LineHeight="18"><Run Language="pl-pl" Text="Pesel"/></TextBlock>
+        <Label x:Name="daneZalogU_Copy8" Padding="10,10,5,10" Content="Label" HorizontalAlignment="Left" Height="44" Margin="190,220,0,0" VerticalAlignment="Top" Width="330" RenderTransformOrigin="0.505,0.55" Background="White" FontSize="18"/>
+        <TextBlock Padding="10,10,5,10" HorizontalAlignment="Left" Height="44" Margin="10,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Background="White" FontSize="18" LineHeight="18"><Run Language="pl-pl" Text="Miasto"/></TextBlock>
+        <Label x:Name="daneZalogU_Copy9" Padding="10,10,5,10" Content="Label" HorizontalAlignment="Left" Margin="190,425,0,160" Width="330" RenderTransformOrigin="0.505,0.55" Background="White" FontSize="18"/>
+        <TextBlock Padding="10,5,5,10" HorizontalAlignment="Left" Height="31" Margin="10,479,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="510" Background="White" FontSize="14" LineHeight="14"><Run Language="pl-pl" Text="OPIEKUN"/></TextBlock>
+        <Label x:Name="daneZalogU_Copy10" Padding="10,3,10,0" Content="Label" HorizontalAlignment="Left" Margin="10,518,0,0" Width="251" RenderTransformOrigin="0.505,0.55" Background="White" FontSize="14" Height="26" VerticalAlignment="Top"/>
+        <Label x:Name="daneZalogU_Copy11" Padding="10,3,10,0" Content="Label" HorizontalAlignment="Left" Margin="266,519,0,86" Width="255" RenderTransformOrigin="0.505,0.55" Background="White" FontSize="14" Height="25"/>
+        <Label x:Name="daneZalogU_Copy12" Padding="10,3,10,0" Content="Label" HorizontalAlignment="Left" Margin="10,550,0,49" Width="251" RenderTransformOrigin="0.505,0.55" Background="White" FontSize="14" Height="25"/>
+        <Label x:Name="daneZalogU_Copy13" Padding="10,3,10,0" Content="Label" HorizontalAlignment="Left" Margin="266,550,0,49" Width="255" RenderTransformOrigin="0.505,0.55" Background="White" FontSize="14" Height="25"/>
+
     </Grid>
 </Page>
