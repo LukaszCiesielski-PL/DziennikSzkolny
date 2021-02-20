@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DziennikOcen"
         mc:Ignorable="d"
-        Title="haslo" Height="450" Width="450" ResizeMode="CanMinimize">
+        Title="Zmiana hasła" Height="450" Width="450" ResizeMode="CanMinimize">
     <Grid Background="#FFC7B39F"  >
         <Grid Background="White" Width="430" Height="414" Margin="10,10,10,10">
             <TextBlock HorizontalAlignment="Center" Height="27" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Margin="0,25,0,0" FontSize="20" FontFamily="Franklin Gothic Medium" FontStretch="Medium" FontWeight="Normal" TextAlignment="Center"><Run Text="Menu "/><Run Language="pl-pl" Text="zmiany hasła"/><LineBreak/></TextBlock>

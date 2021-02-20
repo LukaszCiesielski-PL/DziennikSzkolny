@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:DziennikOcen"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="uczniowie">
+      Title="Uczniowie">
 
     <Grid Background="#FFA6A6A6"  Width="710" Height="540">
         

@@ -15,7 +15,7 @@
             <Button Content="Oceny" HorizontalAlignment="Left" Height="51" BorderThickness="0,0,0,0" VerticalAlignment="Top" Width="135" FontWeight="Bold" Foreground="White" Background="#FFC7B39F" FontSize="16" BorderBrush="#00707070" Margin="-2,108,0,0" Click="Button_Click_2"/>
             <Button Content="Uczniowie" HorizontalAlignment="Left" Height="50" BorderThickness="0,0,0,0" VerticalAlignment="Top" Width="135" FontWeight="Bold" Foreground="White" Background="#FFC7B39F" FontSize="16" BorderBrush="#00707070" Margin="-2,164,0,0" Click="Button_Click_3"/>
             <Button x:Name="wylogujBtn" Content="Wyloguj" HorizontalAlignment="Left" Height="50" BorderThickness="0,0,0,0" VerticalAlignment="Center" Width="135" FontWeight="Bold" Foreground="White" Background="#FFC7B39F" FontSize="16" BorderBrush="#00707070" Click="wylogujBtn_Click" Margin="-2,0,0,0"/>
-            <TextBlock x:Name="daneZalogowanegoNauczyciela" HorizontalAlignment="Right" Width="170" Height="75" Margin="0,499,700,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" FontSize="14">
+            <TextBlock x:Name="daneZalogowanegoNauczyciela" HorizontalAlignment="Right" Width="170" Height="75" Margin="0,475,685,0" Text="Jesteś zalogowany jako" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" FontSize="14" Foreground="White" Background="#FFD4AC66" FontWeight="Bold" Padding="0,10,0,10">
 
             </TextBlock>
 

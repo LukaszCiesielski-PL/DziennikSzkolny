@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:DziennikOcen"
         xmlns:Dziennik="clr-namespace:Dziennik" x:Class="DziennikOcen.Window1"
         mc:Ignorable="d"
-        Title="Konto ucznia" Height="670" Width="900">
-    <Grid Background="#FFC7B39F" Margin="0,0,0,-25" Height="659.04" >
+        Title="Konto ucznia" Height="700" Width="900">
+    <Grid Background="#FFC7B39F" Margin="0,0,0,0" Height="660.04" >
         <Grid Background="White" Margin="10,10,10,10">
             <Frame Name="Navigate" Grid.Column="0" NavigationUIVisibility="Hidden" Width="585" Height="610" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,10,0,0"></Frame>
             <Button Content="Twoje dane" HorizontalAlignment="Right" Height="50" BorderThickness="0,0,0,0" VerticalAlignment="Top" Width="150" FontWeight="Bold" Foreground="White" Background="#FFC7B39F" FontSize="16" BorderBrush="#00707070" Margin="0,-2,732,0" Click="Button_Click"/>
@@ -15,7 +15,7 @@
             <Button Content="Oceny" HorizontalAlignment="Left" Height="51" BorderThickness="0,0,0,0" VerticalAlignment="Top" Width="135" FontWeight="Bold" Foreground="White" Background="#FFC7B39F" FontSize="16" BorderBrush="#00707070" Margin="-2,108,0,0" Click="Button_Click_2"/>
             <Button Content="Nauczyciele" HorizontalAlignment="Left" Height="50" BorderThickness="0,0,0,0" VerticalAlignment="Top" Width="135" FontWeight="Bold" Foreground="White" Background="#FFC7B39F" FontSize="16" BorderBrush="#00707070" Margin="-2,164,0,0" Click="Button_Click_3"/>
             <Button x:Name="wylogujBtn" Content="Wyloguj" HorizontalAlignment="Left" Height="50" BorderThickness="0,0,0,0" VerticalAlignment="Center" Width="135" FontWeight="Bold" Foreground="White" Background="#FFC7B39F" FontSize="16" BorderBrush="#00707070" Click="wylogujBtn_Click" Margin="-2,0,0,0"/>
-            <TextBlock x:Name="daneZalogowanego" HorizontalAlignment="Right" Height="75" Margin="0,554,700,0" Text="Jesteś zalogowany jako" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" TextAlignment="Center" FontSize="14"/>
+            <TextBlock x:Name="daneZalogowanego" HorizontalAlignment="Right" Height="75" Margin="0,555,685,0" Text="Jesteś zalogowany jako" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" TextAlignment="Center" FontSize="14" Background="#FFD4AC66" FontWeight="Bold" Foreground="White" Padding="0,10,0,10"/>
 
         </Grid>
     </Grid>

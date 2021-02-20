@@ -5,8 +5,9 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DziennikOcen"
       mc:Ignorable="d" 
-      
-      Title="planZajecNauczyciel">
+     
+
+      Title="Plan zajęć">
 
     <Grid Background="#FFA6A6A6"  Width="530" Height="540">
         <StackPanel x:Name="Pon" Width="95" Margin="10,108,0,0" HorizontalAlignment="Left" Orientation="Vertical" Background="White" Height="352" VerticalAlignment="Top"/>

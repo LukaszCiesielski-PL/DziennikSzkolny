@@ -2,6 +2,8 @@
 using System.Linq;
 using System.Windows.Controls;
 
+using System.Windows;
+
 namespace DziennikOcen
 {
     /// <summary>
@@ -35,6 +37,90 @@ namespace DziennikOcen
             daneZalogU_Copy13.Content = db.Opiekuns.Where(o => o.IdOpiekun == _uczen.IdOpiekun).First().Email;
         }
 
+        private void changen_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
+        }
+
+        private void changeBTNn_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+
+        }
+
+        private void IDn_Checked(object sender, System.Windows.RoutedEventArgs e)
+        {
+
+        }
+
+        private void change_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void changeBTN_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            using var db = new baza();
+            bool? numTel = this.Numer.IsChecked;
+            bool? email = this.Email.IsChecked;
+            bool? miasto = this.Miasto.IsChecked;
+            bool? ulica = this.Ulica.IsChecked;
+            bool? ulicanr = this.UlicaNr.IsChecked;
+            string dane = this.changen.Text;
+            bool? numTelO = this.NumerO.IsChecked;
+            bool? emailO = this.EmailO.IsChecked;
+            if (numTel != true && email != true && miasto != true && ulica != true && ulicanr != true && numTelO != true && emailO != true)
+            {
+                MessageBox.Show("Zaznacz dane które chcesz zmienić");
+            }
+            if (numTel == true)
+            {
+                Uczen change = db.Uczens.FirstOrDefault(x => x.NumerTel == x.NumerTel);
+                change.NumerTel = dane;
+                db.SaveChanges();
+                MessageBox.Show("Dane zostały zmienione");
+            }
+            if (email == true)
+            {
+                Uczen change = db.Uczens.FirstOrDefault(x => x.Email == x.Email);
+                change.Email = dane;
+                db.SaveChanges();
+                MessageBox.Show("Dane zostały zmienione");
+            }
+            if (miasto == true)
+            {
+                Uczen change = db.Uczens.FirstOrDefault(x => x.MiastoZam == x.MiastoZam);
+                change.MiastoZam = dane;
+                db.SaveChanges();
+                MessageBox.Show("Dane zostały zmienione");
+            }
+            if (ulica == true)
+            {
+                Uczen change = db.Uczens.FirstOrDefault(x => x.UlicaZam == x.UlicaZam);
+                change.UlicaZam = dane;
+                db.SaveChanges();
+                MessageBox.Show("Dane zostały zmienione");
+            }
+            if (ulicanr == true)
+            {
+                Uczen change = db.Uczens.FirstOrDefault(x => x.NumerUl == x.NumerUl);
+                change.NumerUl = dane;
+                db.SaveChanges();
+                MessageBox.Show("Dane zostały zmienione");
+            }
+            if (numTelO == true)
+            {
+                Opiekun change = db.Opiekuns.FirstOrDefault(x => x.NumerTel == x.NumerTel);
+                change.NumerTel = dane;
+                db.SaveChanges();
+                MessageBox.Show("Dane zostały zmienione");
+            }
+            if (emailO == true)
+            {
+                Opiekun change = db.Opiekuns.FirstOrDefault(x => x.Email == x.Email);
+                change.Email = dane;
+                db.SaveChanges();
+                MessageBox.Show("Dane zostały zmienione");
+            }
+        }
     }
 }
