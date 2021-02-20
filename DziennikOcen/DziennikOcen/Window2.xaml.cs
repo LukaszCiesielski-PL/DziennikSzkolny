@@ -43,11 +43,7 @@ namespace DziennikOcen
             NavigateNauczyciel.Navigate(_ocenaNauczyciel);
         }
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            _uczniowie = new uczniowie();
-            NavigateNauczyciel.Navigate(_uczniowie);
-        }
+
 
         private void wylogujBtn_Click(object sender, RoutedEventArgs e)
         {

@@ -53,7 +53,7 @@ namespace DziennikOcen {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DziennikOcen;component/uczniowie.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DziennikOcen;V1.0.0.0;component/uczniowie.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\uczniowie.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -83,6 +83,7 @@ namespace DziennikOcen
                 Uczen change = db.Uczens.FirstOrDefault(x => x.Email == x.Email);
                 change.Email = dane;
                 db.SaveChanges();
+
                 MessageBox.Show("Dane zostały zmienione");
             }
             if (miasto == true)
@@ -120,6 +121,7 @@ namespace DziennikOcen
                 db.SaveChanges();
                 MessageBox.Show("Dane zostały zmienione");
             }
+
         }
     }
 }

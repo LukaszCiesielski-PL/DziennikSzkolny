@@ -26,7 +26,7 @@ namespace DziennikOcen
         {
             foreach (var x in _ocena.Where(o => o.IdPrzedmiot == 1))
             {
-                Label _label = new Label { FontSize=18 ,Width=20,Height = 30, Content= $"{x.Ocena1}, " };
+                Label _label = new Label { FontSize = 18, Width = 20, Height = 30, Content = $"{x.Ocena1}, " };
                 Matematyka.Children.Add(_label);
             }
             foreach (var x in _ocena.Where(o => o.IdPrzedmiot == 2))
@@ -52,7 +52,7 @@ namespace DziennikOcen
             foreach (var x in _ocena.Where(o => o.IdPrzedmiot == 6))
             {
                 Label _label = new Label { FontSize = 18, Width = 20, Height = 30, Content = $"{x.Ocena1}, " };
-               JezykA.Children.Add(_label);
+                JezykA.Children.Add(_label);
             }
             foreach (var x in _ocena.Where(o => o.IdPrzedmiot == 7))
             {
@@ -87,6 +87,6 @@ namespace DziennikOcen
             }
             return ocenas;
         }
-       
+
     }
 }

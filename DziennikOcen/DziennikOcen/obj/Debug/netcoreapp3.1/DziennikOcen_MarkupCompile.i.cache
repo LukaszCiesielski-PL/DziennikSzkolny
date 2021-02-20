@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\Łukasz\Desktop\DziennikSzkolny\DziennikOcen\DziennikOcen\App.xaml
-12-78013950
+10811284731
 1-1705818838
-25151470322
+231175861476
 212-665438440
-haslo.xaml;MainWindow.xaml;nauczyciele.xaml;ocena.xaml;ocenyNauczyciel.xaml;planZajec.xaml;planZajecNauczyciel.xaml;twojeDane.xaml;twojeDaneNauczyciel.xaml;uczniowie.xaml;Window1.xaml;Window2.xaml;
+haslo.xaml;MainWindow.xaml;ocena.xaml;ocenyNauczyciel.xaml;planZajec.xaml;planZajecNauczyciel.xaml;twojeDane.xaml;twojeDaneNauczyciel.xaml;Window1.xaml;Window2.xaml;
 
-True
+False
 

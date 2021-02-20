@@ -54,11 +54,7 @@ namespace DziennikOcen
             Navigate.Navigate(_ocena);
         }
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            _nauczyciele = new nauczyciele();
-            Navigate.Navigate(_nauczyciele);
-        }
+
 
         private void wylogujBtn_Click(object sender, RoutedEventArgs e)
         {
