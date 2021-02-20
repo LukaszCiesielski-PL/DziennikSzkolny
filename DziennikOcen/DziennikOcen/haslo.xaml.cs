@@ -30,34 +30,72 @@ namespace DziennikOcen
 
             using var db = new baza();
 
-            string uzytkownikU = this.nazwaUzytkownika.Text;
-            string hasloU = this.hasloUzytkownika.Password;
-            string noweHasloU = this.noweHasloUzytkownika.Password;
- 
-            Uczen uczentoupdate = db.Uczens.FirstOrDefault(x => x.Login == uzytkownikU);
-            
-            
-            if(uczentoupdate.Haslo == hasloU)
-            {
-                uczentoupdate.Haslo = noweHasloU;
-                
-                db.SaveChanges();
-                MessageBox.Show("Hasło zostało zmienione");
-            }
-            Nauczyciel nauczycieltoupdate = db.Nauczyciels.FirstOrDefault(o => o.Login == uzytkownikU);
-            if (nauczycieltoupdate.Haslo == hasloU)
-            {
-                nauczycieltoupdate.Haslo = noweHasloU;
+            string uzytkownik = this.nazwaUzytkownika.Text;
+            string haslo = this.hasloUzytkownika.Password;
+            string noweHaslo = this.noweHasloUzytkownika.Password;
+            bool? ktoU = this.jakoUczen.IsChecked;
+            bool? ktoN = this.jakoNauczyciel.IsChecked;
 
-                db.SaveChanges();
-                MessageBox.Show("Hasło zostało zmienione");
-            }
-            else
+
+            if (ktoU == true)
             {
-                MessageBox.Show("Podałeś złe hasło");
+                Uczen uczentoupdate = db.Uczens.FirstOrDefault(x => x.Login == uzytkownik);
+                if (uczentoupdate.Login == uzytkownik)
+                {
+                    if (uczentoupdate.Haslo == haslo)
+                    {
+
+                        uczentoupdate.Haslo = noweHaslo;
+
+                        db.SaveChanges();
+                        MessageBox.Show("Hasło zostało zmienione");
+                        MainWindow objMainWindow = new MainWindow();
+                        this.Close();
+                        objMainWindow.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Podałeś złe hasło");
+                    }
+                }
+                else
+                {
+
+                    MessageBox.Show("Błędny login");
+                }
+                
+                
+
             }
-            
-            
+            if (ktoN == true)
+            {
+                Nauczyciel nauczycieltoupdate = db.Nauczyciels.FirstOrDefault(o => o.Login == uzytkownik);
+                
+               
+                if (nauczycieltoupdate.Login == uzytkownik)
+                {
+                    if (nauczycieltoupdate.Haslo == haslo)
+                    {
+                        nauczycieltoupdate.Haslo = noweHaslo;
+
+                        db.SaveChanges();
+                        MessageBox.Show("Hasło zostało zmienione");
+                        MainWindow objMainWindow = new MainWindow();
+                        this.Close();
+                        objMainWindow.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Podałeś złe hasło");
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Błędny login");
+                }
+
+            }
             
 
         }
