@@ -1,8 +1,7 @@
 ﻿using Dziennik;
-using System.Windows.Controls;
-
 using System.Linq;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace DziennikOcen
 {
@@ -45,16 +44,16 @@ namespace DziennikOcen
             bool? numTel = this.Numer.IsChecked;
             bool? email = this.Email.IsChecked;
             string dane = this.change.Text;
-            if(numTel != true && email != true)
+            if (numTel != true && email != true)
             {
                 MessageBox.Show("Zaznacz dane które chcesz zmienić");
             }
-            if(numTel == true)
+            if (numTel == true)
             {
-               Nauczyciel change = db.Nauczyciels.FirstOrDefault(x => x.NumerTel == x.NumerTel);
-               change.NumerTel = dane;
-               db.SaveChanges();
-               MessageBox.Show("Dane zostały zmienione");
+                Nauczyciel change = db.Nauczyciels.FirstOrDefault(x => x.NumerTel == x.NumerTel);
+                change.NumerTel = dane;
+                db.SaveChanges();
+                MessageBox.Show("Dane zostały zmienione");
             }
             if (email == true)
             {

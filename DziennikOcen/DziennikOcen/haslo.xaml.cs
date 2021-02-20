@@ -63,15 +63,15 @@ namespace DziennikOcen
 
                     MessageBox.Show("Błędny login");
                 }
-                
-                
+
+
 
             }
             if (ktoN == true)
             {
                 Nauczyciel nauczycieltoupdate = db.Nauczyciels.FirstOrDefault(o => o.Login == uzytkownik);
-                
-               
+
+
                 if (nauczycieltoupdate.Login == uzytkownik)
                 {
                     if (nauczycieltoupdate.Haslo == haslo)
@@ -96,7 +96,7 @@ namespace DziennikOcen
                 }
 
             }
-            
+
 
         }
 

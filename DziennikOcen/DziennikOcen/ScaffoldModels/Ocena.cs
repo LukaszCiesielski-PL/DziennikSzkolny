@@ -15,7 +15,7 @@ namespace Dziennik
         public long IdUczen { get; set; }
         [Required]
         [Column("Ocena", TypeName = "STRING (2)")]
-        public byte[] Ocena1 { get; set; }
+        public string Ocena1 { get; set; }
         [Column(TypeName = "STRING")]
         public byte[] Opis { get; set; }
         [Column("ID_nauczyciel")]
