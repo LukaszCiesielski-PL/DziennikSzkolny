@@ -7,7 +7,7 @@ using System.Windows.Controls;
 namespace DziennikOcen
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// 
     /// </summary>
 
 

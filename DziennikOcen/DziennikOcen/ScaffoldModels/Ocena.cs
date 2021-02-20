@@ -9,22 +9,24 @@ namespace Dziennik
     public partial class Ocena
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("ID_ocena")]
-        public long IdOcena { get; set; }
+        public int IdOcena { get; set; }
+
         [Column("ID_uczen")]
         public long IdUczen { get; set; }
         [Required]
         [Column("Ocena", TypeName = "STRING (2)")]
         public string Ocena1 { get; set; }
         [Column(TypeName = "STRING")]
-        public byte[] Opis { get; set; }
+        public string Opis { get; set; }
         [Column("ID_nauczyciel")]
         public long IdNauczyciel { get; set; }
         [Column("ID_przedmiot")]
         public long IdPrzedmiot { get; set; }
         [Required]
         [Column(TypeName = "DATE (10)")]
-        public byte[] Data { get; set; }
+        public string Data { get; set; }
 
         [ForeignKey(nameof(IdNauczyciel))]
         [InverseProperty(nameof(Nauczyciel.Ocenas))]

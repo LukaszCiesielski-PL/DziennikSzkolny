@@ -11,7 +11,7 @@ namespace DziennikOcen
         private twojeDaneNauczyciel _twojeDaneNauczyciel = new twojeDaneNauczyciel();
         private planZajecNauczyciel _planZajecNauczyciel = new planZajecNauczyciel();
         private ocenyNauczyciel _ocenaNauczyciel = new ocenyNauczyciel();
-        private uczniowie _uczniowie = new uczniowie();
+        
         public Window2()
         {
             InitializeComponent();

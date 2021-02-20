@@ -133,7 +133,7 @@ namespace DziennikOcen {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DziennikOcen;V1.0.0.0;component/ocena.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DziennikOcen;component/ocena.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ocena.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -245,7 +245,7 @@ namespace DziennikOcen {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DziennikOcen;V1.0.0.0;component/twojedane.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DziennikOcen;component/twojedane.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\twojeDane.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
