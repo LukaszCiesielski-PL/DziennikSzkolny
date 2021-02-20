@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Dziennik;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace DziennikOcen
 {
@@ -20,7 +13,10 @@ namespace DziennikOcen
         public haslo()
         {
             InitializeComponent();
+
         }
+
+
 
         private void cofnijBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -31,6 +27,38 @@ namespace DziennikOcen
 
         private void zmien_Click(object sender, RoutedEventArgs e)
         {
+
+            using var db = new baza();
+
+            string uzytkownikU = this.nazwaUzytkownika.Text;
+            string hasloU = this.hasloUzytkownika.Password;
+            string noweHasloU = this.noweHasloUzytkownika.Password;
+ 
+            Uczen uczentoupdate = db.Uczens.FirstOrDefault(x => x.Login == uzytkownikU);
+            
+            
+            if(uczentoupdate.Haslo == hasloU)
+            {
+                uczentoupdate.Haslo = noweHasloU;
+                
+                db.SaveChanges();
+                MessageBox.Show("Hasło zostało zmienione");
+            }
+            Nauczyciel nauczycieltoupdate = db.Nauczyciels.FirstOrDefault(o => o.Login == uzytkownikU);
+            if (nauczycieltoupdate.Haslo == hasloU)
+            {
+                nauczycieltoupdate.Haslo = noweHasloU;
+
+                db.SaveChanges();
+                MessageBox.Show("Hasło zostało zmienione");
+            }
+            else
+            {
+                MessageBox.Show("Podałeś złe hasło");
+            }
+            
+            
+            
 
         }
 

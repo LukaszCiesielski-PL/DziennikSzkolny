@@ -1,20 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Dziennik;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using Dziennik;
-using Microsoft.EntityFrameworkCore;
-using DziennikOcen;
 
 
 namespace DziennikOcen
@@ -22,15 +9,15 @@ namespace DziennikOcen
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    
-    
+
+
     public partial class MainWindow : Window
     {
-        
+
         public MainWindow()
         {
             InitializeComponent();
-            
+
         }
 
         private void zalogujBtn_Click(object sender, RoutedEventArgs e)
@@ -55,7 +42,7 @@ namespace DziennikOcen
             int liczU = uczens.ToArray().Length;
             int liczN = nauczyciels.ToArray().Length;
 
-            if(uczenU == true)
+            if (uczenU == true)
             {
                 if (liczU != 0)
                 {
@@ -63,10 +50,10 @@ namespace DziennikOcen
                     {
                         if (c.Haslo == hasloU)
                         {
-                            
-                            
+
+
                             IQueryable<Uczen> uczens2 = db.Uczens.Where(c => c.Login == uzytkownikU);
-                            DaneU.uczenZal=db.Uczens.Where(c => c.Login == uzytkownikU).First();
+                            DaneU.uczenZal = db.Uczens.Where(c => c.Login == uzytkownikU).First();
 
                             DaneU.ktoZalogowany = true;
                             foreach (var c2 in uczens2)
@@ -85,7 +72,7 @@ namespace DziennikOcen
                     MessageBox.Show("Błędny login");
                 }
             }
-           
+
             if (nauczycielN == true)
             {
                 if (liczN != 0)
@@ -95,14 +82,14 @@ namespace DziennikOcen
                         if (n.Haslo == hasloN)
                         {
                             IQueryable<Nauczyciel> nauczyciels2 = db.Nauczyciels.Where(n => n.Login == uzytkownikN);
-                            DaneU.nauczycielZal= db.Nauczyciels.Where(n => n.Login == uzytkownikN).First();
+                            DaneU.nauczycielZal = db.Nauczyciels.Where(n => n.Login == uzytkownikN).First();
 
                             DaneU.ktoZalogowany = false;
                             foreach (var c3 in nauczyciels2)
                             {
                                 włączMenuNauczyciela($"Jesteś zalogowany jako\n{c3.Imie} {c3.Nazwisko}\n{c3.IdNauczyciel}");
                             }
-                            
+
                         }
                         else
                         {
@@ -115,8 +102,8 @@ namespace DziennikOcen
                     MessageBox.Show("Błędny login");
                 }
             }
-            
-            if(nauczycielN == false & uczenU == false)
+
+            if (nauczycielN == false & uczenU == false)
             {
                 MessageBox.Show("Musisz wybrać kim jesteś !");
             }
@@ -124,12 +111,12 @@ namespace DziennikOcen
         }
         private void włączMenuUcznia(string dane)
         {
-            
+
             Window1 objWindow1 = new Window1();
             this.Close();
             objWindow1.zalogUcz(dane);
             objWindow1.Show();
-            
+
         }
 
 
@@ -143,10 +130,10 @@ namespace DziennikOcen
 
         private void nazwaUzytkownika_TextChanged(object sender, TextChangedEventArgs e)
         {
-            
+
         }
 
-       
+
 
         private void zmienHaslo_Click(object sender, RoutedEventArgs e)
         {

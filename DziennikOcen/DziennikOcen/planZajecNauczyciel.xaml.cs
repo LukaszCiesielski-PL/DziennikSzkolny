@@ -1,17 +1,7 @@
-﻿using System;
+﻿using Dziennik;
 using System.Collections.Generic;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using Dziennik;
 using System.Linq;
+using System.Windows.Controls;
 
 namespace DziennikOcen
 {
@@ -48,7 +38,7 @@ namespace DziennikOcen
             }
             foreach (var x in _aktualnyPrzedmiots.Where(o => o.Dzien == "Środa"))
             {
-                Label _label = new Label {Height = 60, Content = $"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n{IdNaKlasa((int)(x.IdKlasa))}" };
+                Label _label = new Label { Height = 60, Content = $"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n{IdNaKlasa((int)(x.IdKlasa))}" };
                 Sr.Children.Add(_label);
 
             }
@@ -87,5 +77,5 @@ namespace DziennikOcen
             return $"{klasa.Nazwa}";
         }
     }
-    
+
 }

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Dziennik;
+﻿using Dziennik;
 namespace DziennikOcen
 {
     public static class DaneU

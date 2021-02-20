@@ -1,17 +1,7 @@
-﻿using System;
+﻿using Dziennik;
 using System.Collections.Generic;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using Dziennik;
 using System.Linq;
+using System.Windows.Controls;
 namespace DziennikOcen
 {
     /// <summary>
@@ -28,17 +18,17 @@ namespace DziennikOcen
         public void wyswietlPlan()
         {
             using var db = new baza();
-                    
+
             WyswietlPlanU(GetPrzedmiotU(DaneU.uczenZal));
 
         }
 
         public void WyswietlPlanU(List<AktualnyPrzedmiot> _aktualnyPrzedmiots)
         {
-            
-            foreach(var x in _aktualnyPrzedmiots.Where(o => o.Dzien == "Poniedziałek"))
+
+            foreach (var x in _aktualnyPrzedmiots.Where(o => o.Dzien == "Poniedziałek"))
             {
-                Label _label = new Label { Height=60, Content=$"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n{IdNaNauczyciel((int)(x.IdNauczyciel))}"};
+                Label _label = new Label { Height = 60, Content = $"{IdNaPrzedmiot((int)(x.IdPrzedmiot))}\n{IdNaNauczyciel((int)(x.IdNauczyciel))}" };
                 Pon.Children.Add(_label);
             }
             foreach (var x in _aktualnyPrzedmiots.Where(o => o.Dzien == "Wtorek"))
@@ -62,7 +52,7 @@ namespace DziennikOcen
                 Pt.Children.Add(_label);
             }
         }
-        
+
         public List<AktualnyPrzedmiot> GetPrzedmiotU(Uczen uczen)
         {
             using var db = new baza();
@@ -73,9 +63,9 @@ namespace DziennikOcen
             }
             return przedmiots;
         }
-        
 
-       
+
+
         public string IdNaNauczyciel(int _naNauczyciel)
         {
             using var db = new baza();

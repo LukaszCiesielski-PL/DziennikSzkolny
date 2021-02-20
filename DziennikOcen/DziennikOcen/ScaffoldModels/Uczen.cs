@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore;
 
 #nullable disable
 
@@ -47,7 +45,7 @@ namespace Dziennik
         public string Login { get; set; }
         [Column(TypeName = "VARCHAR (20)")]
         public string Haslo { get; set; }
-
+        [Column(TypeName = "VARCHAR (20)")]
         [ForeignKey(nameof(IdKlasa))]
         [InverseProperty(nameof(Klasa.Uczens))]
         public virtual Klasa IdKlasaNavigation { get; set; }

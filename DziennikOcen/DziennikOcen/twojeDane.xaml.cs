@@ -1,18 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using Dziennik;
-using Microsoft.EntityFrameworkCore;
-using DziennikOcen;
+﻿using Dziennik;
 using System.Linq;
+using System.Windows.Controls;
 
 namespace DziennikOcen
 {
@@ -47,6 +35,6 @@ namespace DziennikOcen
             daneZalogU_Copy13.Content = db.Opiekuns.Where(o => o.IdOpiekun == _uczen.IdOpiekun).First().Email;
         }
 
-      
+
     }
 }

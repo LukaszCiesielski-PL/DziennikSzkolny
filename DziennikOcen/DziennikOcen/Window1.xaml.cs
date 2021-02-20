@@ -1,28 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using Dziennik;
-using Microsoft.EntityFrameworkCore;
-using DziennikOcen;
-using System.Linq;
 
 namespace DziennikOcen
 {
     /// <summary>
     /// Logika interakcji dla klasy Window1.xaml
     /// </summary>
-    
+
     public partial class Window1 : Window
     {
-        
+
         private twojeDane _twojeDane = new twojeDane(DaneU.uczenZal);
         private planZajec _planZajec = new planZajec();
         private ocena _ocena = new ocena();
@@ -30,7 +17,7 @@ namespace DziennikOcen
         public Window1()
         {
             InitializeComponent();
-            
+
 
         }
 
@@ -44,12 +31,12 @@ namespace DziennikOcen
             daneZalogowanego.Text = dane;
         }
 
-        
-        
+
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+
             _twojeDane = new twojeDane(DaneU.uczenZal);
             Navigate.Navigate(_twojeDane);
 
