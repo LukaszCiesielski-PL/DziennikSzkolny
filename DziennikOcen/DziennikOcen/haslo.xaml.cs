@@ -6,7 +6,8 @@ using System.Windows.Controls;
 namespace DziennikOcen
 {
     /// <summary>
-    /// Logika interakcji dla klasy haslo.xaml
+    /// Działanie klasy "haslo" która wykonuje kod mający na celu zmianę hasła użytkownika poprzez zastąpienie starego hasła nowym.
+    /// Poprzez wprowadzenie nazwy użytkownika oraz starego hasła program identyfikuje kim jest osoba i nadpisuje jej dane w bazie.
     /// </summary>
     public partial class haslo : Window
     {

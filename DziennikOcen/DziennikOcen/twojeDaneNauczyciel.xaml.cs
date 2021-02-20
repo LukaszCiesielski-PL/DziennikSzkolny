@@ -6,7 +6,8 @@ using System.Windows.Controls;
 namespace DziennikOcen
 {
     /// <summary>
-    /// Logika interakcji dla klasy twojeDaneNauczyciel.xaml
+    /// Strona ta wyświetla dane zalogowanego aktualnie nauczyciela.
+    /// Pozwala ona dodatkowo na modyfikację danych przez nauczyciela.
     /// </summary>
     public partial class twojeDaneNauczyciel : Page
     {
@@ -15,6 +16,10 @@ namespace DziennikOcen
             InitializeComponent();
             wyswietlDane(DaneU.nauczycielZal);
         }
+        /// <summary>
+        /// Przypisuje wartości wyciągnięte z bazy do wskazanych miejsc na temat nauczyciela
+        /// </summary>
+        /// <param name="_nauczyciel"></param>
         public void wyswietlDane(Nauczyciel _nauczyciel)
         {
             using var db = new baza();

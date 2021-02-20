@@ -5,16 +5,22 @@ using System.Windows.Controls;
 namespace DziennikOcen
 {
     /// <summary>
-    /// Logika interakcji dla klasy planZajec.xaml
+    /// Strona wyświetla nam wszystkie przedmioty jakie uczeń ma w każdym dniu na podstawie klasy do której należy
     /// </summary>
     public partial class planZajec : Page
     {
+        /// <summary>
+        /// Wywołanie składników głównego okna 
+        /// 
+        /// </summary>
         public planZajec()
         {
             InitializeComponent();
             wyswietlPlan();
         }
-
+        /// <summary>
+        /// WyświetlPlan - wywołuje funckję pobierającą przedmioty aktualnie zalogowanego ucznia przypisanego do danej klasy
+        /// </summary>
         public void wyswietlPlan()
         {
             using var db = new baza();
@@ -22,7 +28,10 @@ namespace DziennikOcen
             WyswietlPlanU(GetPrzedmiotU(DaneU.uczenZal));
 
         }
-
+        /// <summary>
+        /// Tworzy listę przedmiotów zawierającą przedmiot jaki uczeń odbywa w danym dniu wraz z tym kto go prowadzi
+        /// </summary>
+        /// <param name="_aktualnyPrzedmiots"></param>
         public void WyswietlPlanU(List<AktualnyPrzedmiot> _aktualnyPrzedmiots)
         {
 
@@ -52,7 +61,11 @@ namespace DziennikOcen
                 Pt.Children.Add(_label);
             }
         }
-
+        /// <summary>
+        /// Pobiera listę przedmiotów zalogowanego ucznia poprzez porównanie w bazie ID klasy z ID klasy do której uczęszcza uczeń
+        /// </summary>
+        /// <param name="uczen"></param>
+        /// <returns>Zwraca przedmioty jakie ma uczeń</returns>
         public List<AktualnyPrzedmiot> GetPrzedmiotU(Uczen uczen)
         {
             using var db = new baza();
@@ -64,7 +77,11 @@ namespace DziennikOcen
             return przedmiots;
         }
 
-
+        /// <summary>
+        /// Tłumaczy ID nauczyciela na jego imię i nazwisko
+        /// </summary>
+        /// <param name="_naNauczyciel"></param>
+        /// <returns>Zwraca imię i nazwisko nauczyciela</returns>
 
         public string IdNaNauczyciel(int _naNauczyciel)
         {
@@ -72,6 +89,12 @@ namespace DziennikOcen
             var naucz = db.Nauczyciels.Where(o => o.IdNauczyciel == _naNauczyciel).First();
             return $"{naucz.Imie} {naucz.Nazwisko}";
         }
+
+        /// <summary>
+        /// Tłumaczy ID przedmiotu na jego nazwę
+        /// </summary>
+        /// <param name="_naPrzedmiot"></param>
+        /// <returns>Zwraca nazwę przedmiotu</returns>
         public string IdNaPrzedmiot(int _naPrzedmiot)
         {
             using var db = new baza();

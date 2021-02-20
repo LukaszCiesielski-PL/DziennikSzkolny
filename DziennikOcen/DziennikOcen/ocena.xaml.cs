@@ -7,21 +7,31 @@ namespace DziennikOcen
 {
     /// <summary>
     /// Logika interakcji dla klasy ocena.xaml
+    /// Strona wyświetla nam wszystkie oceny z poszczególnych przedmiotów dla zalogowanego ucznia
     /// </summary>
     public partial class ocena : Page
     {
+        /// <summary>
+        /// Wywołanie składników głównego okna 
+        /// 
+        /// </summary>
         public ocena()
         {
             InitializeComponent();
             WyswietlOceny();
         }
-
+        /// <summary>
+        /// WyświetlOceny - wywołuje funckję pobierającą oceny aktualnie zalogowanego ucznia
+        /// </summary>
         public void WyswietlOceny()
         {
             using var db = new baza();
             WyswietlOcenyU(GetOcenyU(DaneU.uczenZal));
         }
-
+        /// <summary>
+        /// Tworzy listę ocen w zależności od ich numeru przypisania do przedmiotu
+        /// </summary>
+        /// <param name="_ocena"></param>
         public void WyswietlOcenyU(List<Ocena> _ocena)
         {
             foreach (var x in _ocena.Where(o => o.IdPrzedmiot == 1))
@@ -75,7 +85,11 @@ namespace DziennikOcen
                 Historia.Children.Add(_label);
             }
         }
-
+        /// <summary>
+        /// Pobiera listę ocen zalogowanego ucznia poprzez porównanie w bazie ID ucznia z ID ucznia który otrzymał ocenę
+        /// </summary>
+        /// <param name="uczen"></param>
+        /// <returns>Zwraca wszystkie oceny jakie uczeń otrzymał</returns>
 
         public List<Ocena> GetOcenyU(Uczen uczen)
         {

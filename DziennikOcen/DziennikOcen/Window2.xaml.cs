@@ -4,7 +4,7 @@ using System.Windows.Controls;
 namespace DziennikOcen
 {
     /// <summary>
-    /// Logika interakcji dla klasy Window2.xaml
+    /// Jest to okno nawigacyjne dla zalogowanego nauczyciela zawierające przyciski do nawigacji pomiędzy zakładkami z danymi, planem lekcji i ocenami
     /// </summary>
     public partial class Window2 : Window
     {
@@ -20,7 +20,10 @@ namespace DziennikOcen
         {
 
         }
-
+        /// <summary>
+        /// Wyświetla dane zalogowanego użytkownika
+        /// </summary>
+        /// <param name="dane"></param>
         public void zalogNau(string dane2)
         {
             daneZalogowanegoNauczyciela.Text = dane2;

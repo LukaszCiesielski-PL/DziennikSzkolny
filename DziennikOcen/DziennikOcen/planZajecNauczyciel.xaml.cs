@@ -6,16 +6,22 @@ using System.Windows.Controls;
 namespace DziennikOcen
 {
     /// <summary>
-    /// Logika interakcji dla klasy planZajecNauczyciel.xaml
+    /// Strona wyświetla nam wszystkie przedmioty jakie nauczyciel ma w każdym dniu 
     /// </summary>
     public partial class planZajecNauczyciel : Page
     {
+        /// <summary>
+        /// Wywołanie składników głównego okna 
+        /// 
+        /// </summary>
         public planZajecNauczyciel()
         {
             InitializeComponent();
             wyswietlPlan();
         }
-
+        /// <summary>
+        /// WyświetlPlan - wywołuje funckję pobierającą przedmioty aktualnie zalogowanego nauczyciela 
+        /// </summary>
         public void wyswietlPlan()
         {
             using var db = new baza();
@@ -23,7 +29,10 @@ namespace DziennikOcen
             WyswietlPlanN(GetPrzedmiotN(DaneU.nauczycielZal));
 
         }
-
+        /// <summary>
+        /// Tworzy listę przedmiotów zawierającą przedmiot jaki nauczyciel prowadzi w danym dniu wraz z klasą z którą ma zajęcia
+        /// </summary>
+        /// <param name="_aktualnyPrzedmiots"></param>
         public void WyswietlPlanN(List<AktualnyPrzedmiot> _aktualnyPrzedmiots)
         {
             foreach (var x in _aktualnyPrzedmiots.Where(o => o.Dzien == "Poniedziałek"))
@@ -53,6 +62,11 @@ namespace DziennikOcen
                 Pt.Children.Add(_label);
             }
         }
+        /// <summary>
+        /// Pobiera listę przedmiotów zalogowanego nauczyciela
+        /// </summary>
+        /// <param name="nauczyciel"></param>
+        /// <returns>Zwraca przdmioty które i dal jakiej klasy prowadzi</returns>
         public List<AktualnyPrzedmiot> GetPrzedmiotN(Nauczyciel nauczyciel)
         {
             using var db = new baza();
@@ -63,13 +77,21 @@ namespace DziennikOcen
             }
             return przedmiots;
         }
-
+        /// <summary>
+        /// Tłumaczy ID przedmiotu na jego nazwę
+        /// </summary>
+        /// <param name="_naPrzedmiot"></param>
+        /// <returns>Zwraca nazwę przedmiotu</returns>
         public string IdNaPrzedmiot(int _naPrzedmiot)
         {
             using var db = new baza();
             return db.Przedmiots.Where(o => o.IdPrzedmiot == _naPrzedmiot).First().Nazwa;
         }
-
+        /// <summary>
+        /// Tłumaczy ID klasy na jej symbol np. 3Bi
+        /// </summary>
+        /// <param name="_naPrzedmiot"></param>
+        /// <returns></returns>
         public string IdNaKlasa(int _naPrzedmiot)
         {
             using var db = new baza();

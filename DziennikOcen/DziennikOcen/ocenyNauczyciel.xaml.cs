@@ -9,6 +9,7 @@ namespace DziennikOcen
 {
     /// <summary>
     /// Logika interakcji dla klasy ocenyNauczyciel.xaml
+    /// Klasa ta pozwala nauczycielowi wpisać konkretneu uczniowi daną ocenę wraz z opisami, datą i rodzajem z jakiego przedmiotu ją otrzymał
     /// </summary>
     public partial class ocenyNauczyciel : Page
     {

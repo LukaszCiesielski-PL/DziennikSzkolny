@@ -7,7 +7,9 @@ using System.Windows.Controls;
 namespace DziennikOcen
 {
     /// <summary>
-    /// 
+    /// Jest to główne okno logowania użytkowników.
+    /// Podajemy w nim login i hasło oraz wybieramy opcję kim jesteśmy dla lepszej identyfikacji logującego się.
+    /// Występują tutaj również przyciski przenoszące nas do zmiany hasła lub do konta użytkownika po poprawnej weryfikacji.
     /// </summary>
 
 
