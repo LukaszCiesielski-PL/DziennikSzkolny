@@ -13,7 +13,7 @@ namespace DziennikOcen
         private twojeDane _twojeDane = new twojeDane(DaneU.uczenZal);
         private planZajec _planZajec = new planZajec();
         private ocena _ocena = new ocena();
-        
+
         public Window1()
         {
             InitializeComponent();

@@ -68,7 +68,7 @@ namespace Dziennik
 
             modelBuilder.Entity<Ocena>(entity =>
             {
-               // entity.Property(e => e.IdOcena).ValueGeneratedNever();
+                // entity.Property(e => e.IdOcena).ValueGeneratedNever();
 
                 entity.HasOne(d => d.IdNauczycielNavigation)
                     .WithMany(p => p.Ocenas)
